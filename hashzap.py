@@ -27,13 +27,15 @@ def main(pagina):
    
    campo_enviar_mensagem = ft.TextField(label="Digite aqui a sua mensagem")
    botao_eviar = ft.ElevatedButton("Enviar")
+   linha_enviar = ft.Row([campo_enviar_mensagem, botao_eviar])
    
+   chat = 
+
    def entrar_chat(evento):
       popup.open = False
       pagina.remove(titulo)
       pagina.remove(botao)
-      pagina.add(campo_enviar_mensagem)
-      pagina.add(botao_eviar)
+      pagina.add(linha_enviar)
       pagina.update()
    
    # criar o popup
